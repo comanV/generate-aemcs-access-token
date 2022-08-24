@@ -1,0 +1,20 @@
+{
+  "name": "aemcs-access-token",
+  "version": "1.0.0",
+  "description": "Repo for obtaining AEMSC access token ",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@adobe/aemcs-api-client-lib": "git+https://github.com/adobe/aemcs-api-client-lib.git#main",
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.0.2"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
+  }
+}
